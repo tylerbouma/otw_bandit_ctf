@@ -19,13 +19,13 @@ Note that this flag doesn't really do anything for us since we already have an S
 
 We are still connected to bandit26 via a VIM session.
 
-While still in our VIM session we need to first change the shell we are using so we can actually run commands. To do this we use shell=/bin/bash. This will grant us access to the functionality of bash. We can now run commands for vim using :! <command>
+While still in our VIM session we need to first change the shell we are using so we can actually run commands. To do this we use `shell=/bin/bash`. This will grant us access to the functionality of bash. We can now run commands for vim using `:! <command>`
 
-Let's try :! ls
+Let's try `:! ls`
 
 Returns: text.txt and bandit27-do. bandit27-do sounds interesting.
 
-:! bandit27-do
+`:! bandit27-do`
 
 Run a command as another user. Example: ./bandit27-do id
 
