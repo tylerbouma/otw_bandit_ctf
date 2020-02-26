@@ -31,6 +31,6 @@ Run a command as another user. Example: ./bandit27-do id
 
 So this looks like it allows us to run commands as the bandit27 user - let's try grabbing the password from /etc/bandit-pass/badit27
 
-:! ./bandit27-do cat /etc/bandit_pass/bandit27
+`:! ./bandit27-do cat /etc/bandit_pass/bandit27`
 
 **Flag:** 3ba3118a22e93127a4ed485be72ef5ea
