@@ -13,4 +13,6 @@ After a closer inspection I see that this calls on a *~/text.txt* file and then 
 The **crazy** part of this comes with how we can stall this exit mechanic. By minimizing the terminal window enough to the point of the text.txt text not being able to display completely, we are given a **more** option.
 We can then type "v" to give us a vim session and then by typing `:e /etc/bandit_pass/bandit26` we can access the password file - giving us the flag.
 
+Note that this flag doesn't really do anything for us since we already have an SSH key.
+
 **Flag:** 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
