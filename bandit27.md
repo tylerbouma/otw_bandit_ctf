@@ -1,21 +1,15 @@
-We are still connected to bandit26 via a VIM session.
+**PW:** 3ba3118a22e93127a4ed485be72ef5ea
 
-While still in our VIM session we need to first change the shell we are using so we can actually run commands. 
-To do this we use `shell=/bin/bash`.
-This will grant us access to the functionality of bash.
-We can now run commands for vim using `:! <command>`
+This next level is realatively simple and involves cloning a git repository.
 
-Let's try `:! ls`
+There is a git repository at ssh://bandit27-git@localhost/home/bandit27-git/repo. The password for the user bandit27-git is the same as for the user bandit27.
 
-Returns: **text.txt** and **bandit27-do**. bandit27-do sounds interesting.
+Clone the repository and find the password for the next level.
 
-`:! bandit27-do`
+We will clone the repository to a directory in /tmp
 
-*Run a command as another user.*
-*Example: ./bandit27-do id*
+`git clone ssh://bandit27-git@localhost/home/bandit27-git/repo /tmp/bandit27_clone`
 
-So this looks like it allows us to run commands as the bandit27 user - let's try grabbing the password from */etc/bandit-pass/badit27*
+cd to that directory and `cat` the **README** to find the flag 
 
-`:! ./bandit27-do cat /etc/bandit_pass/bandit27`
-
-Flag: 3ba3118a22e93127a4ed485be72ef5ea
+**Flag:** 0ef186ac70e04ea33b4c1853d2526fa2
